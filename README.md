@@ -1,4 +1,4 @@
-# Grepolis Compagnon
+# Grepolis Compagnon (Chrome Extension)
 
 ## Fonctionnalités
 
