@@ -8,9 +8,6 @@
         "48": "icons/G_48.png",
         "128":"icons/G_128.png"
     },
-    "permissions": [
-        "webRequest"
-    ],
     "content_scripts": [
         {
             "matches": [
