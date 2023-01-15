@@ -5,6 +5,9 @@ let farm_town_countdown = 1
 let farm_countdown_node = init_farm_countdown()
 let countdown_func_state = null
 let time_options_state = ["fto_300","fto_600"]
+let farm_auto = false
+
+let farm_auto_node = init_farm_auto()
 
 // simplify the use of farmer town window:
 // auto select toutes les villes de paysans
@@ -28,7 +31,11 @@ function farmer_town_simplifier(e){
                     select_all_btn.click();
                     time_options_state = ["fto_300","fto_600"]
                 }
+
                 fto_claim_button.onclick = claim_ressources
+                if(farm_auto){
+                    fto_claim_button.click()
+                }
                 update_time_options()
             }
 
@@ -158,3 +165,43 @@ function update_time_options(){
         }
     }
 }
+
+
+
+
+
+
+
+function init_farm_auto(){
+    let farm_auto_div = document.createElement('div');
+    let farm_auto_text ="👨‍🌾 auto "
+    farm_auto_div.innerHTML = farm_auto_text +  farm_auto;
+    document.body.appendChild(farm_auto_div);
+
+    farm_auto_div.style.cssText = `
+        position: absolute;
+        width:50px;
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5A78F;
+        z-index:1000;
+        bottom: 0px;
+        right: 155px;
+        font-weight:bold;
+        border: 3px solid #855C04;
+        font-size:12px;
+        cursor: pointer;
+        border-radius: 4px;
+        opacity: 0.9;
+    `;
+
+    farm_auto_div.onclick = (e)=>{
+        farm_auto = !farm_auto
+        farm_auto_div.style.backgroundColor = farm_auto ?  "#C9E5B3" : "#F5A78F" 
+        farm_auto_div.innerHTML = farm_auto_text +  farm_auto;
+    }
+    return farm_auto_div
+}
+
