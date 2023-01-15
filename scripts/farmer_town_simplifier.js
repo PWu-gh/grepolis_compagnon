@@ -70,21 +70,26 @@ String.prototype.toHHMMSS = function () {
 
 function init_farm_countdown(){
     let farm_countdown = document.createElement('div');
-    farm_countdown.innerHTML = "00:00:00";
+    farm_countdown.innerHTML = "👨‍🌾 "+"00:00:00" ;
     document.body.appendChild(farm_countdown);
 
     farm_countdown.style.cssText = `
         position: absolute;
-        width:134px;
+        width:90px;
         height:40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: beige;
+        background-color: #E2D593;
         z-index:1000;
-        top: 50px;
-        right: 0px;
+        top: 590px;
+        right: 22px;
         font-weight:bold;
+        border: 3px solid #855C04;
+        font-size:12px;
+        cursor: pointer;
+        border-radius: 4px;
+
     `;
 
     farm_countdown.onclick = (e)=>{
@@ -98,7 +103,7 @@ function init_farm_countdown(){
 function decrement_countdown(farm_countdown_node){
     farm_town_countdown --;
     let hhmmss = farm_town_countdown.toString().toHHMMSS()
-    farm_countdown_node.innerHTML = hhmmss;
+    farm_countdown_node.innerHTML = "👨‍🌾 "+hhmmss;
     // console.log(farm_town_countdown, hhmmss);
 }
 
