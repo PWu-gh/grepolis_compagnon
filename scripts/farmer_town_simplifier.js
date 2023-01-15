@@ -55,7 +55,7 @@ function farmer_town_simplifier(e){
                     let picked_time = time_options_state[1].substring(4)
                     fto_countdown_loop(picked_time, farm_countdown_node)
 
-                }, 200);
+                }, 300);
             }
         }
     }, 300);
