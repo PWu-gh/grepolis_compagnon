@@ -6,6 +6,7 @@ document.addEventListener("click", farmer_town_simplifier)
 // auto select toutes les villes de paysans
 // auto accept confirmation
 // auto fermeture de la fenêtre
+
 function farmer_town_simplifier(e){
     // if(e.isTrusted == false){return}
     setTimeout(() => { // wait 100ms to let the page load
@@ -49,6 +50,6 @@ function farmer_town_simplifier(e){
 
 
 
-function fto_auto_match_time(){
+function print_fto_timer(){
     
 }
