@@ -24,7 +24,7 @@ function farmer_town_simplifier(e){
                             select_all_btn.click();
                     }
 
-                    fto_claim_button.onclick = claim_ressources()
+                    fto_claim_button.onclick = claim_ressources
                     function claim_ressources(){
                         setTimeout(() => { 
                             document.getElementsByClassName("btn_confirm button_new")[0].click();
