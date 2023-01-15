@@ -80,7 +80,7 @@ function init_farm_countdown(){
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #E2D593 ;
+        background-color: #E4DAAA;
         z-index:1000;
         top: 40px;
         right: 155px;
@@ -89,7 +89,7 @@ function init_farm_countdown(){
         font-size:12px;
         cursor: pointer;
         border-radius: 4px;
-        opacity: 0.85;
+        opacity: 0.9;
     `;
 
     farm_countdown.onclick = (e)=>{
