@@ -120,7 +120,7 @@ function fto_countdown_loop(countdown_start_sec, farm_countdown_node){
         if (farm_town_countdown > 0)
             decrement_countdown(farm_countdown_node);
         else 
-           clearInterval(countdown_func);
+           clearInterval(countdown_func_state);
     }, 1000)
 }
 
