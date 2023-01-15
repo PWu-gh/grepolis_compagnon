@@ -16,7 +16,8 @@
             "js": [
                 "scripts/content.js",
                 "scripts/farmer_town_simplifier.js",
-                "scripts/market_gold_exchange.js"
+                "scripts/market_gold_exchange.js",
+                "scripts/shortcut.js"
             ]
             
         }

@@ -8,7 +8,7 @@ document.addEventListener("click", market_simplifier)
 // auto fermeture de la fenêtre
 function market_simplifier(e){
     if(e.isTrusted == false){return}
-    
+
     setTimeout(() => { // wait 100ms to let the page load
         let gold_exchange_window = document.getElementById("premium_exchange");
 
@@ -33,3 +33,7 @@ function market_simplifier(e){
 
     
 }
+
+
+// Layout.wnd.Create(Layout.wnd.TYPE_FARM_TOWN_OVERVIEWS,'Villages de Paysan')
+
