@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Grepolis Compagnon",
     "description": "Simplify Grepolis user experience",
-    "version": "1.0",
+    "version": "1.1",
     "icons": {
         "32": "icons/G_32.png",
         "48": "icons/G_48.png",
