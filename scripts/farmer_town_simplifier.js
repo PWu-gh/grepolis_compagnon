@@ -82,8 +82,8 @@ function init_farm_countdown(){
         justify-content: center;
         background-color: #E2D593 ;
         z-index:1000;
-        top: 57px;
-        right: 138px;
+        top: 40px;
+        right: 155px;
         font-weight:bold;
         border: 3px solid #855C04;
         font-size:12px;
