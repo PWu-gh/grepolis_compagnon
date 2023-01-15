@@ -12,17 +12,17 @@ function market_simplifier(e){
     setTimeout(() => { // wait 100ms to let the page load
         let gold_exchange_window = document.getElementById("premium_exchange");
 
-        if(gold_exchange_window){
-            let sell_ress_btn = gold_exchange_window.querySelector('[data-pagenr="1"]')
-            sell_ress_btn.click()
+        if( !gold_exchange_window){ return }
+        
+        let sell_ress_btn = gold_exchange_window.querySelector('[data-pagenr="1"]')
+        sell_ress_btn.click()
 
-            let buy_ress_btn = gold_exchange_window.querySelector('[data-pagenr="0"]')
-            if(buy_ress_btn){
-                buy_ress_btn.remove()
+        let buy_ress_btn = gold_exchange_window.querySelector('[data-pagenr="0"]')
+        if(buy_ress_btn){
+            buy_ress_btn.remove()
 
-                let buy_ress_cont = gold_exchange_window.querySelector('[data-pagenr="0"][data-type="buy"]')
-                buy_ress_cont.remove()
-            }
+            let buy_ress_cont = gold_exchange_window.querySelector('[data-pagenr="0"][data-type="buy"]')
+            buy_ress_cont.remove()
         }
 
         // there are only 3 since buy progress bar has been removed
@@ -39,6 +39,10 @@ function market_simplifier(e){
                 text_div.innerHTML = available_ress
             }
         });
+        
+        
+
+        
     }, 200);
 
     
