@@ -34,7 +34,9 @@ function farmer_town_simplifier(e){
 
                 fto_claim_button.onclick = claim_ressources
                 if(farm_auto){
-                    fto_claim_button.click()
+                    setTimeout(() => {
+                        fto_claim_button.click()
+                    }, 400);
                 }
                 update_time_options()
             }
@@ -127,7 +129,7 @@ function fto_countdown_loop(countdown_start_sec, farm_countdown_node){
         if (farm_town_countdown > 0)
             decrement_countdown(farm_countdown_node);
         else 
-           clearInterval(countdown_func_state);
+            clearInterval(countdown_func_state);
     }, 1000)
 }
 
