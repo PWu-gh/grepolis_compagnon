@@ -9,7 +9,7 @@ document.addEventListener("click", market_simplifier)
 function market_simplifier(e){
     if(e.isTrusted == false){return}
 
-    setTimeout(() => { // wait 100ms to let the page load
+    setTimeout(() => { // wait to let the page load
         let gold_exchange_window = document.getElementById("premium_exchange");
 
         if( !gold_exchange_window){ return }

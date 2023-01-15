@@ -76,17 +76,26 @@ boutonoff_shortcuts.innerHTML = "ON";
 document.body.appendChild(boutonoff_shortcuts);
 
 //CSS
-boutonoff_shortcuts.style.cssText = 'position:absolute;width:50px;height:50px;z-index:1000;background:#2A81EB;bottom:0px';
-boutonoff_shortcuts.style.color = "#FFFFFF";
-boutonoff_shortcuts.style.display = "flex";
-boutonoff_shortcuts.style.alignItems = "center";
-boutonoff_shortcuts.style.justifyContent = "center";
+boutonoff_shortcuts.style.cssText = `
+    position: absolute;
+    width:50px;
+    height:50px;
+    z-index:1000;
+    background-color: #2A81EB;
+    color: #FFFFFF;
+    bottom:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+`;
+
 
 //Switch
 boutonoff_shortcuts.onclick = () => 
 {
     off = !off;
-    let color = off ? "blue" : "#2A81EB";
+    let color = off ? "#D17636" : "#2A81EB";
     boutonoff_shortcuts.style.background = color;
     boutonoff_shortcuts.innerHTML  = off ? "OFF" : "ON";
 };
